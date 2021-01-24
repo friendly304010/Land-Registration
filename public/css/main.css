@@ -1,0 +1,161 @@
+#main {
+    display: none;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid rgb(28, 180, 190);
+    border-right: 16px solid white;
+    border-bottom: 16px solid rgb(28, 180, 190);
+    border-left: 16px solid white;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loaderID2 {
+    display: none;
+}
+
+label>input {
+    /* HIDE RADIO */
+    visibility: hidden;
+    /* Makes input not-clickable */
+    position: absolute;
+    /* Remove input from document flow */
+}
+
+label>input+img {
+    /* IMAGE STYLES */
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+label>input:checked+div {
+    /* (RADIO CHECKED) IMAGE STYLES */
+    border: 2px solid #f00;
+}
+
+
+/*regular button*/
+
+.btn-forked {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    background-color: rgb(28, 180, 190);
+    color: rgb(255, 255, 255);
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.btn-forked:hover {
+    /*background-color: #0495a5;*/
+    background-color: rgb(24, 159, 168);
+    color: white;
+}
+
+.btn-forked.focus,
+.btn-forked:focus {
+    box-shadow: 0 0 0 .2rem rgba(24, 159, 168, .5)
+}
+
+.btn-forked.disabled,
+.btn-forked:disabled {
+    background-color: rgb(28, 180, 190);
+    border-color: rgb(28, 180, 190);
+}
+
+.btn-forked:not([disabled]):not(.disabled).active,
+.btn-forked:not([disabled]):not(.disabled):active,
+.show>.btn-forked.dropdown-toggle {
+    color: #fff;
+    background-color: rgb(20, 135, 143);
+    border-color: rgb(20, 135, 143);
+    box-shadow: 0 0 0 .2rem rgba(24, 159, 168, .5)
+}
+
+
+/*outlined button*/
+
+.btn-forked2 {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: #ffffff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #ffffff;
+}
+
+.btn-forked2:hover {
+    color: #fff;
+    background-color: rgb(124, 208, 218);
+    /*border-color: #28a745*/
+    border-color: rgb(124, 208, 218);
+}
+
+.btn-forked2.focus,
+.btn-forked2:focus {
+    box-shadow: 0 0 0 .2rem rgba(124, 208, 218, .5)
+}
+
+.btn-forked2.disabled,
+.btn-forked2:disabled {
+    color: rgb(124, 208, 218);
+    background-color: transparent
+}
+
+.btn-forked2:not([disabled]):not(.disabled).active,
+.btn-forked2:not([disabled]):not(.disabled):active,
+.show>.btn-forked2.dropdown-toggle {
+    color: #fff;
+    background-color: rgb(131, 217, 226);
+    border-color: rgb(131, 217, 226);
+    box-shadow: 0 0 0 .2rem rgba(124, 208, 218, .5)
+}
+
+a:link {
+    color: white !important;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+a:visited {
+    color: white !important;
+}
