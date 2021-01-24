@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include partials/head.ejs %>
+</head>
+
+<body>
+
+    <br>
+
+    <!-- INITIAL SCREEN -->
+    <div id="initID">
+        <div id="loaderID" class="loader"></div>
+        <ul id="initialStatusID"></ul>
+    </div>
+
+    <!-- MAIN SCREEN AFTER METAMASK INFO LOADED -->
+    <div id="main" class="container-fluid">
+        <div class="row">
+            <div class="col-10 offset-1" style="padding: 10px 5px; background-color:rgba(14, 104, 114, 0.103);">
+                <h3 class="text-center">Land Registration</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 offset-1" style="background-color: rgb(0, 174, 187);">
+                <% include partials/components/landlist.ejs %>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-1" style="background-color:rgb(135, 211, 219); height:175px;">
+                <!--rgb(22, 163, 173) rgb(135, 211, 219)  rgb(29, 195, 207)-->
+                <% include partials/components/operations.ejs %>
+            </div>
+            <div class="col-2" style="background-color:rgb(135, 211, 219); height:175px;">
+                <br>
+                <div id="loaderID2" class="loader"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 offset-1" style="padding: 20px; background-color:rgb(127, 198, 206); height:230px;">
+                <% include partials/components/status.ejs %>
+                    <div class="row">
+                        <p class="col-6"><small>Created by <a href="https://www.linkedin.com/in/samantha-ouyang" target="_blank">Samantha Ouyang</a></small></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <% include partials/jsincludes.ejs %>
+
+        <script src="/js/arrive.min.js"></script>
+        <script src="/js/config.js"></script>
+        <script src="/js/init.js"></script>
+        <script src="/js/loadLands.js"></script>
+        <script src="/js/operations.js"></script>
+
+</body>
+
+</html>
