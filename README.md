@@ -8,5 +8,3 @@
 4. Run 'node app.js'  
 5. Open Dapp in localhost:8080. It should be able to connect to deployed contract via MetaMask.  
 
-Project made following this tutorial:
-https://tiny.cc/a-basic-real-estate-dapp
